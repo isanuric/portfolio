@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: whitesmoke;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -74,6 +74,10 @@
     &.show {
       transform: translate3d(0, 0, 0);
     }
+
+    &.current > a {
+      color: $secondary-color;
+    }
   }
 
   .nav-link {
@@ -81,7 +85,7 @@
     position: relative;
     font-size: 15px;
     text-transform: uppercase;
-    color: antiquewhite;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 

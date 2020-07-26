@@ -75,6 +75,20 @@
       transform: translate3d(0, 0, 0);
     }
   }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    text-decoration: none;
+    @include easeOut;
+
+    &:hover {
+        color: $secondary-color;
+    }
+  }
 }
 
 // Delay each navigation item
